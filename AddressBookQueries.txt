@@ -24,3 +24,8 @@ UC7: 	SELECT COUNT(City) FROM address_book GROUP BY City;
 	SELECT COUNT(State) FROM address_book GROUP BY State;
 
 UC8: 	SELECT First_Name, Last_Name, City FROM address_book ORDER BY First_Name;
+
+UC9: 	ALTER TABLE address_book ADD Type varchar(30);
+	UPDATE address_book SET Type='Family' WHERE First_Name='David';
+
+UC10: 	SELECT COUNT(*) FROM address_book GROUP BY Type;
