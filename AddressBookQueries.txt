@@ -29,3 +29,5 @@ UC9: 	ALTER TABLE address_book ADD Type varchar(30);
 	UPDATE address_book SET Type='Family' WHERE First_Name='David';
 
 UC10: 	SELECT COUNT(*) FROM address_book GROUP BY Type;
+
+UC11: 	INSERT INTO address_book VALUES('David', 'Alapat', 'India', 'Thrissur', 'Kerala', 123, 1234567890, 'hi@gmail.com', 'Friend');
